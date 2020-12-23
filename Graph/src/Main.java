@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Main {
@@ -39,6 +40,13 @@ public class Main {
                 System.out.print(re + " ");
             }
             System.out.println();
+
+            System.out.println("Shortest path unweighted");
+            int[] dist =ShortestPathUnWeighted.findShortestPath(graphAdjecencyyList,0);
+            for(int i =0; i<dist.length;i++){
+                System.out.print(""+dist[i]+" ");
+            }
+
         }
     }
 }
